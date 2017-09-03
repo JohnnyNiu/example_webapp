@@ -38,4 +38,10 @@ public class PostController {
         model.addAttribute("post", postService.getPost(id));
         return "post";
     }
+
+    @RequestMapping(value = "posts", method = GET)
+    public String getPosts(Model model) {
+        model.addAttribute("posts", postService.getPosts());
+        return "posts";
+    }
 }

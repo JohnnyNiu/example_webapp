@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class PostService {
@@ -21,6 +22,10 @@ public class PostService {
 
     public Post getPost(long id) {
         return postRepository.findOne(id);
+    }
+
+    public List<Post> getPosts() {
+        return (List<Post>) postRepository.findAll();
     }
 }
 
