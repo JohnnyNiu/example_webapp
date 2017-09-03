@@ -4,3 +4,7 @@
     - Gradle
     - jpa
     - postgre sql
+    
+    
+### To start
+    ./gradlew bootRun
