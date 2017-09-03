@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<H1 th:text="${post.title}"></H1>
+
+<div>
+    <span th:text="'author : '+ ${post.author}"></span>
+    <span th:text="'last update: '+ ${post.lastUpdate}"></span>
+</div>
+<div>
+    <lable>Content:</lable>
+    <div><p th:text="${post.content}"></p></div>
+</div>
+
+</body>
+</html>
