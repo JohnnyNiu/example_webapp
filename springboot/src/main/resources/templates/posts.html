@@ -2,11 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
 <H1>All Posts</H1>
+<div>
+    <a href="/posts/create">create a new post</a>
+</div>
+
 <table>
     <thead>
-        <th>Title</th>
-        <th>Author</th>
-        <th>LastUpdate</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>LastUpdate</th>
     </thead>
 
     <tr th:each="post: ${posts}">
