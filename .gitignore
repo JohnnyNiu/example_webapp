@@ -1,8 +1,10 @@
 # Intellj project file
 .idea/
+.DS_Store
 
 # Compiled class file
 *.class
+out/
 
 # Log file
 *.log
