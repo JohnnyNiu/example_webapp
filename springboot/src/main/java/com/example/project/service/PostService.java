@@ -18,4 +18,9 @@ public class PostService {
         System.out.println("Post created: " + post);
         postRepository.save(post);
     }
+
+    public Post getPost(long id) {
+        return postRepository.findOne(id);
+    }
 }
+
