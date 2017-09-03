@@ -44,4 +44,10 @@ public class PostController {
         model.addAttribute("posts", postService.getPosts());
         return "posts";
     }
+
+    @RequestMapping(value = "posts/{id}/delete",method = GET)
+    public String deletePost(@PathVariable long id){
+        postService.delete(id);
+        return "redirect:/posts";
+    }
 }

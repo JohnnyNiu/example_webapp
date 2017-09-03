@@ -13,6 +13,8 @@
         <td><a th:text="${post.title}" th:href="'/posts/'+${post.id}"></a></td>
         <td th:text="${post.author}"></td>
         <td th:text="${post.lastUpdate}"></td>
+        <td>
+            <a th:href="'/posts/'+${post.id}+'/delete'">delete</a></td>
     </tr>
 
 
