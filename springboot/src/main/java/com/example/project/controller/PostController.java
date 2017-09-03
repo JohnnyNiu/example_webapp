@@ -19,14 +19,13 @@ public class PostController {
     @Autowired
     private PostService postService;
 
-    @RequestMapping(value = "post/create", method = GET)
+    @RequestMapping(value = "posts/create", method = GET)
     public String createBlogForm(Model model, Post post) {
         model.addAttribute("post", post);
-        postService.create(post);
-        return "createPost";
+        return "postCreationForm";
     }
 
-    @RequestMapping(value = "post/create", method = POST)
+    @RequestMapping(value = "posts/create", method = POST)
     public String createBlog(Model model, Post post) {
         model.addAttribute("post", post);
         postService.create(post);
