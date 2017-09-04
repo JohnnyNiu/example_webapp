@@ -3,4 +3,4 @@ from app import app
 
 @app.route('/todo/create')
 def createTodoItem():
-    return "create a todo item"
+    return render_template('createItem.html', name="niu")
