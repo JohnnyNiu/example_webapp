@@ -8,3 +8,7 @@ Prerequisite
     ```bash
         ./setup.sh
     ```
+#### Run
+    1. ```
+./run.py
+    ```
