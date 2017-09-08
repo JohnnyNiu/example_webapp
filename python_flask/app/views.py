@@ -13,3 +13,9 @@ def createTodoItem():
     toSave = Item(content=itemContent)
     itemService.saveToDoItem(toSave)
     return request.form['content']
+
+@app.route('/todo/list', methods=['GET'])
+def listTodoItems():
+    items = itemService.listItems()
+    print(items)
+    return render_template('listItems.html', items = items)

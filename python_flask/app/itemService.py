@@ -5,3 +5,6 @@ def saveToDoItem(input):
     entry = Item(content=input.content)
     db.session.add(entry)
     db.session.commit()
+
+def listItems():
+    return db.session.query(Item).all();
