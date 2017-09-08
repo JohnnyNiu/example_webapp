@@ -8,3 +8,7 @@ def saveToDoItem(input):
 
 def listItems():
     return db.session.query(Item).all();
+
+def deleteItem(id):
+    item = Item.query.filter_by(id=id).delete();
+    db.session.commit()

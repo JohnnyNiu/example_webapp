@@ -19,3 +19,9 @@ def listTodoItems():
     items = itemService.listItems()
     print(items)
     return render_template('listItems.html', items = items)
+
+@app.route('/todo/<id>/delete', methods=['GET'])
+def deletePost(id):
+    assert(id == request.view_args['id'])
+    itemService.deleteItem(id)
+    return redirect('/todo/list')
