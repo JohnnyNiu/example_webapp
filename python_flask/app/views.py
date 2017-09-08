@@ -1,6 +1,6 @@
 from flask import request, render_template
 from app import app
-from app import toDoItemService
+from app import itemService
 from app.model.item import Item 
 
 @app.route('/todo/create', methods=['GET'])
@@ -9,7 +9,7 @@ def createTodoItemForm():
 
 @app.route('/todo/create', methods=['POST'])
 def createTodoItem():
-    content = request.form['content']
-    toSave = Item(content)
-    toDoItemService.saveToDoItem(toSave)
+    itemContent = request.form['content']
+    toSave = Item(content=itemContent)
+    itemService.saveToDoItem(toSave)
     return request.form['content']

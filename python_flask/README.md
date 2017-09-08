@@ -8,6 +8,10 @@ Prerequisite
     ```bash
         ./setup.sh
     ```
+2. setup db (using sqlite)
+    ```
+        ./db_create.py
+    ```
 #### Run
     1. ```
 ./run.py

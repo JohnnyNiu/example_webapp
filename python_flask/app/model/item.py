@@ -1,13 +1,9 @@
-class Item: 
+from app import db
 
-    def __init__(self, content):
-        self._content = content
+class Item(db.Model): 
 
-    def getContent():
-        return self._content
-
-    def setContent(content):
-        self._content = content
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String(200))
 
     def __str__(self):
-        return "item: "+ self._content
+        return "<item> "+ self.content
