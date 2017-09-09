@@ -1,0 +1,19 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <H3>All todo items</H3>
+    <a href="/todo/create"> New item </a>
+    <ul>
+        {% for entry in items %}
+        <li><span>{{ entry.content}}</span> <span><a href="/todo/{{ entry.id }}/delete">Delete</a></span></li>
+        {% else %}
+        <li><em>Unbelievable.  No entries here so far</em></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
