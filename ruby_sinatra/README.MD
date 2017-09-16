@@ -11,3 +11,8 @@ bundle update
 ```bash
 bundle install
 ```
+
+### Run
+```bash
+ruby app.rb
+```
