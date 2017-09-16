@@ -27,3 +27,12 @@ Set ruby version for system:
 ```
 rvm --default use 2.4
 ```
+##### Using Bundler to manage dependencies
+
+```bash
+bundle update
+```
+
+```bash
+bundle install
+```
