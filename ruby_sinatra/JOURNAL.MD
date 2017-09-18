@@ -36,3 +36,9 @@ bundle update
 ```bash
 bundle install
 ```
+
+#### ActiveRecord vs Datamapper
+For a single Responsiblity Principal, 
+I prefer Datamapper which is a better design
+
+[Recipe for sinatra and datamapper](http://recipes.sinatrarb.com/p/models/data_mapper)

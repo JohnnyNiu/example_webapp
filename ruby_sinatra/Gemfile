@@ -1,3 +1,11 @@
 source "https://rubygems.org"
 
+# As the json dependency of datamapper gem is json 1.6,
+# but ruby 2.4 depends on 2.0.2
+# So it has to be locked to ruby 2.3
+# Details is here: https://www.evernote.com/l/AVJGxdVwb1BL37dgKqA8j33URRRLkBwzKPo
+ruby "2.3.3"
+
 gem 'sinatra', '~> 2.0'
+gem 'data_mapper', '~> 1.2.0'
+gem 'dm-sqlite-adapter'

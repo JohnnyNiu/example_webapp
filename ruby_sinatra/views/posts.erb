@@ -1,0 +1,23 @@
+<H1>All Posts</H1>
+
+<a href="/post/create">New Post</a>
+<table>
+  <thead>
+    <th>Title</th>
+    <th>Created time</th>
+    <th>Content</th>
+  </thead>
+  <% @posts.each do |post| %>
+      <tr>
+        <td>
+          <%= post.title %>
+        </td>
+        <td>
+          <%= post.created_at %>
+        </td>
+        <td>
+          <%= post.body %>
+        </td>
+      </tr>
+  <% end %>
+</table>
